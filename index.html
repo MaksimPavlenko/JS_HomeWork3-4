@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JS_HomeWork3-4</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-10 col-lg-push-1" id="content">
+
+             
+            </div>    
+          </div>
+        </div>
+
+    <script type="text/javascript">
+         var content = document.getElementById("content");
+        content.innerHTML += "<p>Тест по программированию</p>";
+        /*content.style.backgroundColor = "#DCDCDC";*/
+        content.style.marginTop = "18px";
+        content.style.color = "black";
+        content.style.textAlign = "center";
+        content.style.fontSize = "20px";
+
+        document.write("<div id='block'></div>");
+        var block = document.getElementById("block");
+
+        block.style.width = "570px";
+        block.style.margin = "0 auto"
+        block.style.fontSize = "20px"
+        block.style.marginTop = '34px'
+        block.style.marginBottom = '10px';
+
+
+        text = '1. Вопрос №1';
+
+        block.innerHTML = text;
+        block.style.clear = 'both';
+        block.style.lineHeight = '0';
+        
+        block.innerHTML += '<label style="margin-top: 10px"><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px;">Вариант ответа №1</p>';
+        block.innerHTML += '<label><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px">Вариант ответа №2</p>';
+        block.innerHTML += '<label><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px">Вариант ответа №3</p>';
+
+
+
+        document.write("<div id='block1'></div>");
+        var blok1 = document.getElementById("blok1")
+       
+        block1.style.width = "570px";
+        block1.style.margin = "0 auto"
+        block1.style.fontSize = "20px"
+
+        block1.style.clear = 'both';
+        block1.style.lineHeight = '0.7';
+
+       block1.innerHTML += "<p style='padding-top: 11px'>2. Вопрос №2</p>"
+       block1.innerHTML += '<label style="margin-top: 10px"><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px; margin-top: -8px">Вариант ответа №1</p>';
+       block1.innerHTML += '<label style="margin-top: -5px"><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px; margin-top: -8px">Вариант ответа №2</p>';
+       block1.innerHTML += '<label style="margin-top: -5px"><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px; margin-top: -8px">Вариант ответа №3</p>';
+
+
+        document.write("<div id='block2'></div>");
+        var blok2 = document.getElementById("blok2")
+       
+        block2.style.width = "570px";
+        block2.style.margin = "0 auto"
+        block2.style.fontSize = "20px"
+
+        block2.style.clear = 'both';
+        block2.style.lineHeight = '0.7';
+
+        block2.innerHTML += "<p style='padding-top: 11px'>3. Вопрос №3</p>"
+        block2.innerHTML += '<label style="margin-top: 10px"><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px; margin-top: -8px">Вариант ответа №1</p>';
+        block2.innerHTML += '<label style="margin-top: -5px"><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px; margin-top: -8px">Вариант ответа №2</p>';
+        block2.innerHTML += '<label style="margin-top: -5px"><input type="checkbox" value="1" name="k"><span></span></label><p style="padding-left:50px; margin-top: -8px">Вариант ответа №3</p>';
+
+
+        document.write("<div id='result'></div>");
+        var result = document.getElementById("result");
+        result.innerHTML += "<h4 style='color: black; text-align:  center'>Проверить мой результат</h4>";
+
+        result.style.width = "315px";
+        result.style.padding = "5px 15px";
+        result.style.margin = "44px auto"
+        result.style.border = "2px solid black"
+        result.style.backgroundColor = "#cfe2f3";
+     
+      </script>
+
+    
+
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
